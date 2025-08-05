@@ -44,6 +44,59 @@
         />
       </fieldset>
 
+      <fieldset>
+        <legend>Ticket & Workshops</legend>
+
+        <label for="TicketType">Ticket type</label>
+        <select name="TicketType" id="TicketType" required>
+          <option value="">Select card type</option>
+          <option value="Standard">Standard</option>
+          <option value="VIP">VIP</option>
+          <option value="Student">Student</option>
+        </select>
+
+        <fieldset>
+          <legend>Workshops</legend>
+
+          <label">Web Performance
+          <input
+            type="checkbox"
+            id="WebPerformance"
+            name="Workshops"
+            value="WebPerformance"
+          /></label>
+
+          <label">Accessibility
+          <input
+            type="checkbox"
+            id="Accessibility"
+            name="Workshops"
+            value="Accessibility"
+          /></label>
+
+          <label>Testing
+          <input
+            type="checkbox"
+            id="Testing"
+            name="Workshops"
+            value="Testing"
+          /></label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Diet</legend>
+
+            <label>None<input type="radio" id="None" name="Diet"></label>
+            <label>Vegan<input type="radio" id="Vegan" name="Diet"></label>
+            <label>Kosher<input type="radio" id="Kosher" name="Diet"></label>
+            <label>Halal<input type="radio" id="Halal" name="Diet"></label>
+            <label>Other<input type="radio" id="Other" name="Diet"></label>
+
+        </fieldset>
+
+      </fieldset>
+
       <button type="submit">submit</button>
     </form>
   </body>
