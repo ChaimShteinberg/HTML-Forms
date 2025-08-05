@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conference Registration</title>
+  </head>
+  <body>
+    <form method="post" action="http://localhost:3043/form-data">
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="name">Full Name</label>
+        <input
+          type="text"
+          id="name"
+          name="Full Name"
+          pattern="[A-Za-zא-ת '"
+          ]+
+          minlength="2"
+          required
+          aria-describedby="name"
+          autocomplete="name"
+        />
+
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="Email"
+          aria-describedby="email"
+          autocomplete="email"
+          required
+        />
+
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          id="phone"
+          name="Phone"
+          pattern="05[0-9]-?[0-9]{7}"
+          aria-describedby="phone"
+          autocomplete="photo"
+        />
+      </fieldset>
+
+      <button type="submit">submit</button>
+    </form>
+  </body>
+</html>
